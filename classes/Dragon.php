@@ -4,6 +4,8 @@
 // La classe Dragon hérite de ma classe personnage
 class Dragon extends Personnage {
 
+    protected $vie = 100;
+
     public function __construct() {
         parent::__construct();
         // Je redéfini le constructeur de cette classe, je souhaite que mes instances de dragon aient une propriété id
