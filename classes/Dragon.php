@@ -4,7 +4,7 @@
 // La classe Dragon hérite de ma classe personnage
 class Dragon extends Personnage {
 
-    protected $vie = 100;
+    protected $vie;
 
     public function __construct() {
         parent::__construct();
@@ -16,6 +16,7 @@ class Dragon extends Personnage {
         // Je vais définir x et y aléatoirement entre 1 et 900
         $this->x = rand(1,900);
         $this->y = rand(1,900);
+        $this->vie = 100;
     }
 
     // Je redéfini la méthode héritée setNom

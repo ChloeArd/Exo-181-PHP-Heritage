@@ -11,13 +11,14 @@ class Personnage {
     protected $nom;
     protected $x;
     protected $y;
-    protected $vie = 50;
+    protected $vie;
 
     // Constructeur de ma classe permettant de définir des valeurs par défaut lorsqu'elle est instanciée
     public function __construct() {
         $this->setNom("Nom par défaut");
         $this->x = 0;
         $this->y = 0;
+        $this->vie = 50;
     }
 
     // Méthode permettant de déplacer le personnage vers la droite

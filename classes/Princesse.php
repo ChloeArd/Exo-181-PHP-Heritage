@@ -1,12 +1,13 @@
 <?php
 
 class Princesse extends Personnage {
-    private $saved = 0;
+    private $saved;
 
     public function __construct() {
         parent::__construct();
         $this->x = 450;
         $this->y = 450;
+        $this->saved = 0;
     }
 
     /**
@@ -24,6 +25,5 @@ class Princesse extends Personnage {
     {
         $this->saved = $saved;
     }
-
 
 }
